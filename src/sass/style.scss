@@ -1,0 +1,142 @@
+
+@import 'libs/fonts';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    font-family: 'SFProDispl', sans-serif;
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    color: #2F3035;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.page-section{
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+.categories__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.categories__item{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    width: 370px;
+    display: flex;
+    padding: 20px 20px 16px;
+    justify-content: space-between;
+    transition: all .3s;
+}
+
+
+
+.categories__item-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories__item-img{
+    text-align: center;
+    width: 50%;
+}
+
+.categories__item-img img{
+    max-width: 100%;
+}
+
+.categories__item-tittle{
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+    font-family: 'Barlow', sans-serif;
+    transition: all .3s;
+}
+
+.categories__item:hover{
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.categories__item:hover .categories__item-tittle{
+    color: #1C62CD;
+}
+
+.categories__item-text{
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+
+}
+
+.categories__item-text::after{
+    content: url('../icons/Back.svg');
+    padding-left: 2px;
+}
+
+
+
+.banner{
+    margin-bottom: 80px;
+    
+}
+
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/search';
+@import 'blocks/footer';
+@import 'blocks/breadcrumbs';
+@import 'blocks/catalog';
+@import 'blocks/product';
+@import 'blocks/aside';
+@import 'blocks/product-card';

@@ -1,0 +1,115 @@
+.catalog{
+    padding-bottom: 100px;
+    &__title{
+        padding-bottom: 25px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2F3035;
+    }
+    &__filters{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner{
+        padding-top: 47px;
+        display: flex;
+        &-aside{
+            min-width: 290px;
+            margin-right: 10px;
+        }
+        &_list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &-product{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .pagination{
+        width: 100%;
+        margin-top: 70px;
+        &__list{
+            display: flex;
+            justify-content: center;
+            &_item{
+                padding: 9px 12px;
+                border: 2px solid transparent;
+                margin: 0 11px;
+                font-size: 18px;
+                line-height: 22px;
+                color: #c4c4c4c4;
+                a{
+                    display: block;
+                }
+            }
+            &_item.active{
+                padding: 13px 12px;
+                border: 2px solid #1C62CD;
+                color: #1C62CD;
+            }
+        }
+    }
+}
+
+
+.catalog__filters-items{
+    button{
+        background: #F0F0F4;
+        border: none;
+        margin-right: 8px;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2F3035;
+        opacity: 0.7;
+        padding: 5px 25px;
+        cursor: pointer;
+    }
+}
+
+
+.catalog__filters_btn{
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    select{
+        width: 178px;
+        border-color: #D7D9DF;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2F3035;
+        text-align: center;
+        cursor: pointer;
+    }
+    button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    }
+}
+
+
+.catalog__filters_btngrid{
+    padding-top: 1px;
+    border: none;
+    margin-left: 10px;
+}
+.catalog__filters_btnline{
+    padding-top: 1px;
+    border: none;
+    margin-left: 10px;
+}
+.catalog__filters_button{
+    opacity: .3;
+}
+.catalog__filters_button.catalog__filters_button--active{
+    opacity: 1;
+}
+
+

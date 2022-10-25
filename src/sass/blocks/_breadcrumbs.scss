@@ -1,0 +1,25 @@
+.breadcrumbs{
+    padding: 40px 0;
+    &__list_item{
+        display: inline-block;
+        position: relative;
+        padding-right: 16px;
+        margin-right: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #C4C4C4;
+        &::after{
+            content:"";
+            position: absolute;
+            right: 0;
+            background-image: url('../icons/Back.svg');
+            width: 6px;
+            height: 9px;
+            bottom: 6px;
+        }
+        &:last-child::after{
+            display: none;
+        }
+    }
+}

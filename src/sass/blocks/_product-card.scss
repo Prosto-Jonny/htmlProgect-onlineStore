@@ -1,0 +1,115 @@
+.product-card{
+    margin-bottom: 80px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-box{
+        position: relative;
+        width: 500px;
+        padding-top: 64px;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        &::before{
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    &__content{
+        width: 570px;
+    }
+    &__price-old{
+        position: relative;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 44px;
+        color: #000000;
+        opacity: 0.6;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../icons/Vector2.svg');
+            height: 30px;
+            width: 150px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            left: 180px;
+            top: 5px;
+
+        }
+    }
+    &__price-new{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2F3035;
+        margin-bottom: 17px;
+        margin-top: 15px;
+    }
+    &__link{
+        border-bottom: 1px solid $main-color;
+        font-size: 15px;
+        line-height: 18px;
+        color: $main-color;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #2F3035;
+        margin-bottom: 10px;
+    }
+    &__code{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #2F3035;
+        opacity: 0.6;
+        margin-bottom: 22px;
+    }
+    &__btns{
+        margin-bottom: 50px;
+        a{
+            margin-right: 30px;
+        }
+    }
+    .tabs :last-child{
+        padding-left: 17px;
+    }
+    &__tab{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        opacity: 0.6;
+        padding-bottom: 5px;
+        padding-right: 17px;
+        margin-bottom: 5px;
+    }
+    .tab--active{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        opacity: 1;
+    }
+    &__list{
+        margin-bottom: 20px;
+    }
+    &__list-item{
+        padding: 15px 0 6px;
+        border-bottom: 1px solid rgba(47,48,53,0.1);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-key{
+        padding-right: 15px;
+    }
+    &__item-meaning{
+        width: 125px;
+    }
+    &__btn{
+        margin-top: 45px;
+        margin-left: 0;
+    }
+}
